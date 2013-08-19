@@ -14,9 +14,10 @@ html, body { height: 100%; }
 
 body {
   background-color: #FFF;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: medium;
   text-align: center;
+  color: #444;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -29,7 +30,7 @@ a {
   color: #268bd2;
   text-decoration: none; 
 }
-a:hover, a:visited { color: #6c71c4; }
+a:hover, a.extra:hover { color: #d33682; }
 
 /*****************************************************************************/
 /*
@@ -45,10 +46,16 @@ ul.posts li {
   line-height: 1.75em;
 }
 
-ul.posts span {
+ul.posts {
   color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
-  font-size: 80%;
+}
+
+ul.posts .post-list-title {
+  font-size: 150%;
+}
+
+.exceprt {
+  font-size: 100%;
 }
 
 /*****************************************************************************/
@@ -58,11 +65,15 @@ ul.posts span {
 /*****************************************************************************/
 
 .site {
-  font-size: 115%;
+  font-size: 110%;
   text-align: justify;
-  width: 42em;
+  max-width: 38em;
   margin: 3em auto 2em;
-  line-height: 1.5em;
+  line-height: 1.7em;
+}
+
+.site .header {
+  margin-bottom: 2em;
 }
 
 .site .header a {
@@ -83,9 +94,14 @@ ul.posts span {
   color: #268bd2;
 }
 
-.site .header a.extra {
-  color: #aaa;
-  margin-left: 1em;
+.site .header h1.title a:hover .stand-out-letter {
+  color: #d33682;
+}
+
+a.extra {
+  font-size: 130%;
+  color: #073642;
+  margin: 0 0.7em;
 }
 
 .site .meta {
@@ -156,3 +172,13 @@ ul.posts span {
 .post pre.terminal code {
   background-color: #333;
 }
+
+/*****************************************************************************/
+/*
+/* Responsiveness
+/*
+/*****************************************************************************/
+
+@media screen and (max-width: 400px) {
+}
+

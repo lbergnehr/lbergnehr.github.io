@@ -4,11 +4,14 @@ title: Leo Bergnéhr
 ---
 
 <div id="home">
-  <h1>Pieces</h1>
-
   <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% for page in site.posts %}
+
+      <li>
+        <p class="post-list-title"><span>{{ page.date | date_to_string }}</span> &raquo; <a href="{{ page.url }}">{{ page.title }}</a></p>
+        <p class="post-list-exceprt">{{page.excerpt}}</p>
+      </li>
+
     {% endfor %}
   </ul>
 </div>
