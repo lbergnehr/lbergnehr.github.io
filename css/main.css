@@ -69,16 +69,15 @@ ul.posts span {
 }
 
 .site .header h1.title {
-  display: inline-block;
-  margin-bottom: 2em;
+  font-size: 4em;
 }
 
 .site .header h1.title a {
-  color: #a00;
+  color: #333;
 }
 
-.site .header h1.title a:hover {
-  color: #000;
+.site .header h1.title a:hover .stand-out-letter {
+  color: rgb(63, 142, 207);
 }
 
 .site .header a.extra {
