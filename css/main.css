@@ -25,9 +25,11 @@ h1, h2, h3, h4, h5, h6 {
 h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+a { 
+  color: #268bd2;
+  text-decoration: none; 
+}
+a:hover, a:visited { color: #6c71c4; }
 
 /*****************************************************************************/
 /*
@@ -70,23 +72,20 @@ ul.posts span {
 
 .site .header h1.title {
   font-size: 4em;
+  text-align: center;
 }
 
 .site .header h1.title a {
   color: #333;
 }
 
-.site .header h1.title a:hover .stand-out-letter {
-  color: rgb(63, 142, 207);
+.site .header h1.title a span.stand-out-letter {
+  color: #268bd2;
 }
 
 .site .header a.extra {
   color: #aaa;
   margin-left: 1em;
-}
-
-.site .header a.extra:hover {
-  color: #000;
 }
 
 .site .meta {
