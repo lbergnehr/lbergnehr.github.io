@@ -1,8 +1,20 @@
-<h2>:(</h2>
+<html>
+<!-- Custom CSS -->
+<link rel="stylesheet" href="/css/main.css">
 
-<p id="content"></p>
+<body>
+<div class="container">
+  <div class="site">
 
-<script type="text/javascript">
-var text = "Could not find the address " + location.href + ".";
-document.getElementById("content").innerText = text;
-</script>
+    <h1>Could not find that address :(</h1>
+
+    <p id="content"></p>
+
+    <script type="text/javascript">
+      var text = "Could not find the address " + location.href + ". Try finding it from the <a href='/'>start page</a>.";
+      document.getElementById("content").innerHTML = text;
+    </script>
+  </div>
+</div>
+</body>
+</html>
