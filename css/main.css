@@ -116,9 +116,8 @@ a.extra {
   overflow: hidden;
 }
 
-.site .footer .contact {
-  float: left;
-  margin-right: 3em;
+.site .footer .copyright {
+  text-align: center;
 }
 
 .about-image { text-align: center; }
