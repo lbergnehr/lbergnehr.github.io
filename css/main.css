@@ -42,7 +42,7 @@ ul.posts {
   margin-bottom: 2em;
 }
 
-ul.posts li {
+ul.posts li, .post p {
   line-height: 1.75em;
 }
 
@@ -119,20 +119,6 @@ a.extra {
 .site .footer .contact {
   float: left;
   margin-right: 3em;
-}
-
-.site .footer .contact a {
-  color: #8085C1;
-}
-
-.site .footer .rss {
-  margin-top: 1.1em;
-  margin-right: -.2em;
-  float: right;
-}
-
-.site .footer .rss img {
-  border: 0;
 }
 
 /*****************************************************************************/
