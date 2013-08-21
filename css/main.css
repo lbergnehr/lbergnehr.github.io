@@ -110,18 +110,19 @@ ul.posts .post-list-title {
 }
 
 a.extra {
+  display: inline-block;
   font-size: 130%;
   color: #073642;
-  margin: 0 0.7em;
+  margin: 0 0.8em;
 }
 
 span.github-mark {
-  display: inline-block;
   width: 110px;
   height: 32px;
   padding-top: 3px;
-  background-position: right top;
+  background-position: right center;
   background-repeat: no-repeat;
+  background-size: 16px;
 }
 
 span.github-mark:hover { 
