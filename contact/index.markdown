@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: contact
 title: Contact
 ---
 
 * Email: leo@thisdomain
-* twitter: <a href="http://twitter.com/{{ site.twitter }}/">@{{ site.twitter }}</a><br />
+* twitter: [@{{ site.twitter }}](http://twitter.com/{{ site.twitter }})
 
