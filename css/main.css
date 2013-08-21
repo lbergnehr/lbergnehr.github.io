@@ -79,12 +79,13 @@ ul.posts .post-list-title {
   font-size: 110%;
   text-align: justify;
   max-width: 38em;
-  margin: 3em auto 2em;
+  margin: 1.2em auto 2em;
   line-height: 1.7em;
 }
 
 .site .header {
   margin-bottom: 2em;
+  text-align: center;
 }
 
 .site .header a {
@@ -95,6 +96,7 @@ ul.posts .post-list-title {
 .site .header h1.title {
   font-size: 4em;
   text-align: center;
+  margin-bottom: 0.3em;
 }
 
 .site .header h1.title a {
@@ -215,12 +217,14 @@ div.contact ul {
 @media screen and (max-width: 500px) {
 
   .normal-letter { display: none; }
-  .site .header { text-align: center; }
   a.extra { margin: 0 0.3em; }
   span.github-mark { display: inline; }
   span.github-mark:hover { background: none; }
-  .site .header h1.title { margin-bottom: 20px; }
+  .site .header h1.title {
+    display: inline-block;
+    font-size: 140%;
+  }
   .site { margin: 1em auto 1em; }
-  .site div.header { margin-bottom: 0; }
+  .site div.header { margin-bottom: 1em; }
 }
 
