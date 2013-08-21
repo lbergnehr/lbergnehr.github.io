@@ -2,6 +2,7 @@
 layout: default
 title: About
 ---
+
 My name is Leo. Here I write about things that interest me. Perhaps it'll interest you too.
 
 <div class="about-image">

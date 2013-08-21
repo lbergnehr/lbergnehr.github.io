@@ -196,9 +196,11 @@ div.contact ul {
 /*
 /*****************************************************************************/
 
-@media screen and (max-width: 460px) {
-  .normal-letter {
-    display: none;
-}
+@media screen and (max-width: 500px) {
+
+  .normal-letter { display: none; }
+  .site .header { text-align: center; }
+  a.extra { margin: 0 0.3em; }
+
 }
 
