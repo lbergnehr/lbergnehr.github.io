@@ -40,7 +40,7 @@ function create_new_draft() {
   echo "---" >> ${FILE_PATH}
   echo "layout: post" >> ${FILE_PATH}
   echo "title: \"$TITLE\"" >> ${FILE_PATH}
-  echo "date: %date%" >> ${FILE_PATH}
+  echo "#date:" >> ${FILE_PATH}
   echo "categories: [  ]" >> ${FILE_PATH}
   echo "---" >> ${FILE_PATH}
   echo "" >> ${FILE_PATH}
@@ -67,7 +67,7 @@ function publish_draft() {
   # POST_FILE_PATH="/dev/stdout"
 
   # Replace the %date% tag in the draft with the current date and time
-  cat "${DRAFT_FILE_PATH}" | sed "s/%date%/${TODAYS_DATE_AND_TIME}/g" >> "$POST_FILE_PATH"
+  cat "${DRAFT_FILE_PATH}" | sed "s/^#date:$/date: ${TODAYS_DATE_AND_TIME}/g" >> "$POST_FILE_PATH"
   
   # Remove draft
   rm ${DRAFT_FILE_PATH}
