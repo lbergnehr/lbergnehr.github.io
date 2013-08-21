@@ -201,6 +201,10 @@ div.contact ul {
   .normal-letter { display: none; }
   .site .header { text-align: center; }
   a.extra { margin: 0 0.3em; }
-
+  span.github-mark { display: inline; }
+  span.github-mark:hover { background: none; }
+  .site .header h1.title { margin-bottom: 20px; }
+  .site { margin: 1em auto 1em; }
+  .site div.header { margin-bottom: 0; }
 }
 
