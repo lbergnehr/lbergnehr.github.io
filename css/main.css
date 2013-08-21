@@ -29,6 +29,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
 }
 
+h1 { font-size: 120%; }
+h2 { font-size: 110%; }
+h3 { font-size: 100%; }
+
 
 h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
@@ -158,6 +162,16 @@ div.contact ul {
 /* Posts
 /*
 /*****************************************************************************/
+
+.post-header { text-align: center; }
+
+.post-header .post-title, .post-header .post-date { margin: 0; }
+
+.post-header .post-date { 
+  color: #bbb;
+  font-style: normal;
+  font-weight: normal;
+}
 
 /* standard */
 .post pre {
