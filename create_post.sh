@@ -68,6 +68,10 @@ function publish_draft() {
 
   # Replace the %date% tag in the draft with the current date and time
   cat "${DRAFT_FILE_PATH}" | sed "s/^#date:$/date: ${TODAYS_DATE_AND_TIME}/g" >> "$POST_FILE_PATH"
+
+  # Commit the post to git
+  git add "$POST_FILE_PATH"
+  git commit -m "Add post: ${TITLE}"
   
   # Remove draft
   rm ${DRAFT_FILE_PATH}
