@@ -18,7 +18,7 @@ html, body { height: 100%; }
 
 body {
   background-color: #FFF;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Palatino, Helvetica, Arial, sans-serif;
   font-size: medium;
   text-align: center;
   color: #444;
@@ -58,7 +58,7 @@ ul.posts {
 }
 
 ul.posts li, .post p {
-  line-height: 1.75em;
+  line-height: 1.8em;
 }
 
 ul.posts .post-list-title {
@@ -228,6 +228,7 @@ div.contact ul {
   font-style: normal !important;
   color: #444;
   text-align: right;
+  font-size: 85%;
 }
 
 
