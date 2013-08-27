@@ -10,14 +10,10 @@
   padding: 0;
 }
 
-body {
-  background-image: url('/img/furley_bg.png');
-}
-
 html, body { height: 100%; }
 
 body {
-  background-color: #FFF;
+  background-color: rgb(250,250,251);
   font-family: Palatino, Helvetica, Arial, sans-serif;
   font-size: medium;
   text-align: center;
