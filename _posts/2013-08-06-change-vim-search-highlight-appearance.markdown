@@ -2,7 +2,6 @@
 layout: post
 title: "Change vim search highlight appearance"
 date: 2013-08-06 21:56
-categories: [vim, tech, english]
 ---
 
 So I wanted to change my search highlighting in vim. Didn't find too much info online, so I went through the, in this case helpful, vim documentation. I might add that I'm using the beautiful [Solarized] [1] theme, where its default search highlighting has a bit too much contrast for my taste. If you're using a different theme, this might not be any issue at all.
