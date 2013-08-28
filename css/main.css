@@ -57,12 +57,25 @@ ul.posts li, .post p {
   line-height: 1.8em;
 }
 
-ul.posts .post-list-title {
-  color: #aaa;
+ul.posts .post-list-header, ul.posts .post-list-body {
+  margin-bottom: 1em;
 }
 
+ul.posts .post-list-body { 
+  border-bottom: 1px solid #eee; 
+  padding-bottom: 1em;
+}
+
+ul.posts li:last-child .post-list-body { 
+  border: none;
+}
+
+ul.posts p { margin: 0; }
+
 ul.posts .post-list-title {
+  color: #aaa;
   font-size: 150%;
+  margin 0;
 }
 
 .exceprt {
