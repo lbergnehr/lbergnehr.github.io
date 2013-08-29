@@ -35,7 +35,7 @@ h3 { font-size: 100%; }
 
 
 h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
+p { margin: 0 0 1em 0; }
 
 a { 
   color: #268bd2;
@@ -180,7 +180,10 @@ div.contact ul {
 /*
 /*****************************************************************************/
 
-.post-header { text-align: center; }
+.post-header { 
+  text-align: center; 
+  margin-bottom: 2em;
+}
 
 .post-header .post-title, .post-header .post-date { margin: 0; }
 
@@ -209,6 +212,10 @@ div.contact ul {
 
 .post pre code {
   border: none;
+}
+
+.post .highlight {
+  margin-bottom: 1em;
 }
 
 /* terminal */
