@@ -41,7 +41,6 @@ function create_new_draft() {
   echo "layout: post" >> ${FILE_PATH}
   echo "title: \"$TITLE\"" >> ${FILE_PATH}
   echo "#date:" >> ${FILE_PATH}
-  echo "categories: [  ]" >> ${FILE_PATH}
   echo "---" >> ${FILE_PATH}
   echo "" >> ${FILE_PATH}
 
