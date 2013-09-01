@@ -15,7 +15,7 @@ html, body { height: 100%; }
 body {
   background-color: #fff;
   font-family: Palatino, Helvetica, Arial, sans-serif;
-  font-size: medium;
+  font-size: 100%;
   text-align: center;
   color: #444;
 }
@@ -29,9 +29,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
 }
 
-h1 { font-size: 120%; }
-h2 { font-size: 110%; }
-h3 { font-size: 100%; }
+h1 { font-size: 140%; }
+h2 { font-size: 120%; }
+h3 { font-size: 110%; }
 
 
 h1 { margin-bottom: 1em; }
@@ -55,6 +55,7 @@ ul.posts {
 
 ul.posts li, .post p {
   line-height: 1.8em;
+  font-size: 115%;
 }
 
 ul.posts .post-list-header, ul.posts .post-list-body {
