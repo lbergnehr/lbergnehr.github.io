@@ -54,8 +54,7 @@ ul.posts {
 }
 
 ul.posts li, .post p {
-  line-height: 1.8em;
-  font-size: 115%;
+  line-height: 1.7em;
 }
 
 ul.posts .post-list-header, ul.posts .post-list-body {
