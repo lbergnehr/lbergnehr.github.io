@@ -1,6 +1,6 @@
 name:     Leo Bergnéhr
 year:     2016
-markdown: redcarpet
+markdown: kramdown
 pygments: true
 
 email:    leo@thisdomain
