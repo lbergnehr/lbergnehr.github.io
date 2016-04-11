@@ -12,8 +12,15 @@ function main() {
     exit 1
   fi
 
+  # Add extension
+  # Create the file name -- lowercase and replace spaces with -
+  FILE_NAME=`echo "${TITLE}" | tr "[A-Z]" "[a-z]" | tr " " "-"`
+  FILE_NAME=${FILE_NAME}.${EXTENSION}
+  FILE_PATH="_drafts/${FILE_NAME}"
+
   # If the file exists, consider it a draft and publish it; otherwise, create a new draft with that name
-  if ! [ -f "${TITLE}" ]; then
+  echo file: ${FILE_PATH}
+  if ! [ -f "${FILE_PATH}" ]; then
     create_new_draft
   else
     publish_draft
@@ -22,19 +29,10 @@ function main() {
 
 function create_new_draft() {
   echo "Creating new draft with title: '${TITLE}'."
-
-  # Create the file name -- lowercase and replace spaces with -
-  FILE_NAME=`echo "${TITLE}" | tr "[A-Z]" "[a-z]" | tr " " "-"`
-
-  # Add extension
-  FILE_NAME=${FILE_NAME}.${EXTENSION}
-
   echo "Saving draft with filename: '${FILE_NAME}'."
 
   # Remove to get content of file to stdout
   # FILE_PATH="/dev/stdout"
-
-  FILE_PATH="_drafts/${FILE_NAME}"
 
   # Create the front matter
   echo "---" >> ${FILE_PATH}
@@ -49,7 +47,7 @@ function create_new_draft() {
 }
 
 function publish_draft() {
-  DRAFT=${TITLE}
+  DRAFT=${FILE_PATH}
   echo "Publishing draft: '${DRAFT}'."
 
   DRAFT_FILE_PATH="${DRAFT}"
