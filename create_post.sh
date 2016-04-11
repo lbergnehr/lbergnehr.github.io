@@ -9,6 +9,7 @@ function main() {
   if ! [ "${TITLE}" ]
   then
     echo "Usage: `basename $0` { <title for new post> | <existing draft to publish> }"
+    echo "Example: `basename $0` \"My post\" (same if \"my-post.${EXTENSION}\" already exists.)"
     exit 1
   fi
 
