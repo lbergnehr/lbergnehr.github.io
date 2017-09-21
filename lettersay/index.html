@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Lettersay</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <script src="main.js"></script>
+    <script>
+      var app = Elm.Main.fullscreen();
+      app.ports.say.subscribe(function(word) {
+        speechSynthesis.speak(new SpeechSynthesisUtterance(word));
+    });
+    </script>
+  </body>
+</html>
