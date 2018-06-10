@@ -1,7 +1,7 @@
 name:     Leo Bergnéhr
-year:     2016
+year:     2018
 markdown: kramdown
-pygments: true
+highlighter: rouge
 
 email:    leo@thisdomain
 twitter:  lbergnehr
