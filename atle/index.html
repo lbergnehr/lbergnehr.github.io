@@ -30,11 +30,18 @@
 
   <body>
     <div>
-      Hej, jag heter <span class="atle">Atle</span> och jag är <span class="red">6</span> år och <span class="yellow">jag har en <span class="secret">legoönskelista</span></span>.
+      Hej, jag heter <span class="atle">Atle</span> och jag är <span id="age" class="red">6</span> år och <span class="yellow">jag har en <span class="secret">legoönskelista</span></span>.
     </div>
 
     <img src="atle.jpg" alt="Atle">
 
     <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="150" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/se/album/catchy-song-feat-t-pain-that-girl-lay-lay/1456337561?i=1456337696"></iframe>
+
+    <script>
+      var years =
+        ((Date.now() - (new Date(2013, 07, 08).getTime())) / (1000 * 60 * 60 * 24 * 365))
+        .toLocaleString("sv-SE", {maximumSignificantDigits: 2})
+      document.getElementById("age").innerHTML = years
+    </script>
   </body>
 </html>
